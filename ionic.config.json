@@ -1,8 +1,0 @@
-{
-  "name": "revolumote4",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "vue-vite",
-  "id": "f9e7e7c1"
-}

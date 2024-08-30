@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="4"
+        app:rowCount="7">
+
+        <!-- Line 0 -->
+
+        <Button
+            android:id="@+id/btn00"
+            android:layout_width="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GAUCHE" />
+
+        <Button
+            android:id="@+id/btn01"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Info" />
+
+        <Button
+            android:id="@+id/btn02"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Menu" />
+
+        <Button
+            android:id="@+id/btn03"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Rech" />
+
+        <!-- Line 1 -->
+
+        <Button
+            android:id="@+id/btn10"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn11"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn12"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn13"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <!-- Line 2 -->
+
+        <Button
+            android:id="@+id/btn20"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn21"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btn22"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn23"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="8" />
+
+        <!-- Line 3 -->
+
+        <Button
+            android:id="@+id/btn30"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btn31"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn32"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Pause" />
+
+        <Button
+            android:id="@+id/btn33"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Rec" />
+
+        <!-- Line 4 -->
+
+        <Button
+            android:id="@+id/btn40"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Vol-" />
+
+        <Button
+            android:id="@+id/btn41"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="UP" />
+
+        <Button
+            android:id="@+id/btn42"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Mute" />
+
+        <Button
+            android:id="@+id/btn43"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Vol+" />
+
+        <!-- Line 5 -->
+
+        <Button
+            android:id="@+id/btn40"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="GAUCHE" />
+
+        <Button
+            android:id="@+id/btn41"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/btn42"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="DROITE" />
+
+        <Button
+            android:id="@+id/btn43"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="PGM+" />
+
+        <!-- Line 6 -->
+
+        <Button
+            android:id="@+id/btn40"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="On/Off" />
+
+        <Button
+            android:id="@+id/btn41"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="DOWN" />
+
+        <Button
+            android:id="@+id/btn42"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Free" />
+
+        <Button
+            android:id="@+id/btn43"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="PGM-" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>
