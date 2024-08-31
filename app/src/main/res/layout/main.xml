@@ -2,348 +2,256 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/black_button"
+    android:collapseColumns="0">
 
-    <androidx.gridlayout.widget.GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="fill"
-        app:columnCount="4"
-        app:rowCount="7">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="0,1,2,3"
+        android:gravity="center">
 
-        <!-- Line 0 -->
+        <!-- Row 1 -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0sp">
+            <!-- fleche gauche -->
+            <Button
+                android:id="@+id/btn00"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/red_button"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/button00" />
+            <!-- Info -->
+            <Button
+                android:id="@+id/btn01"
+                android:layout_height="fill_parent"
+                android:background="@drawable/yellow_button"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/button01" />
+            <!-- Menu -->
+            <Button
+                android:id="@+id/btn02"
+                android:layout_height="fill_parent"
+                android:background="@drawable/green_button"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/button02" />
+            <!-- Rech -->
+            <Button
+                android:id="@+id/btn03"
+                android:layout_height="fill_parent"
+                android:background="@drawable/blue_button"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/button03" />
 
-        <!-- fleche gauche -->
-        <Button
-            android:id="@+id/btn00"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:background="@drawable/red_button"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/button00" />
-        <!-- Info -->
-        <Button
-            android:id="@+id/btn01"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/yellow_button"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/button01" />
-        <!-- Menu -->
-        <Button
-            android:id="@+id/btn02"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/green_button"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/button02" />
-        <!-- Rech -->
-        <Button
-            android:id="@+id/btn03"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/blue_button"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/button03" />
 
-        <!-- Line 1 -->
-        <!-- 1 -->
-        <Button
-            android:id="@+id/btn10"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button10" />
-        <!-- 2 -->
-        <Button
-            android:id="@+id/btn11"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button11" />
-        <!-- 3 -->
-        <Button
-            android:id="@+id/btn12"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button12" />
-        <!-- 4 -->
-        <Button
-            android:id="@+id/btn13"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button13" />
+        </TableRow>
 
-        <!-- Line 2 -->
-        <!-- 5 -->
-        <Button
-            android:id="@+id/btn20"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
+        <!-- Row 2 -->
+        <TableRow
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button20" />
-        <!-- 6 -->
-        <Button
-            android:id="@+id/btn21"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button21" />
-        <!-- 7 -->
-        <Button
-            android:id="@+id/btn22"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button22" />
-        <!-- 8 -->
-        <Button
-            android:id="@+id/btn23"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button23" />
+            android:gravity="center_horizontal">
+            <!-- 1 -->
+            <Button
+                android:id="@+id/btn10"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button10" />
+            <!-- 2 -->
+            <Button
+                android:id="@+id/btn11"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button11" />
+            <!-- 3 -->
+            <Button
+                android:id="@+id/btn12"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button12" />
+            <!-- 4 -->
+            <Button
+                android:id="@+id/btn13"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button13" />
 
-        <!-- Line 3 -->
-        <!-- 9 -->
-        <Button
-            android:id="@+id/btn30"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button30" />
-        <!-- 0 -->
-        <Button
-            android:id="@+id/btn31"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button31" />
-        <!-- Pause -->
-        <Button
-            android:id="@+id/btn32"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/gray_button"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/button32" />
-        <!-- Rec -->
-        <Button
-            android:id="@+id/btn33"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button33" />
+        </TableRow>
 
-        <!-- Line 4 -->
-        <!-- Vol- -->
-        <Button
-            android:id="@+id/btn40"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
+        <!-- Row 3 -->
+        <TableRow
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/blue_button"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/button40" />
-        <!-- Up -->
-        <Button
-            android:id="@+id/btn41"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/gray_button"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/button41" />
-        <!-- Mute -->
-        <Button
-            android:id="@+id/btn42"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/pink_button"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/button42" />
-        <!-- Vol+ -->
-        <Button
-            android:id="@+id/btn43"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/blue_button"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/button43" />
+            android:gravity="center_horizontal">
+            <!-- 1 -->
+            <Button
+                android:id="@+id/btn20"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button20" />
+            <!-- 6 -->
+            <Button
+                android:id="@+id/btn21"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button21" />
+            <!-- 7 -->
+            <Button
+                android:id="@+id/btn22"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button22" />
+            <!-- 8 -->
+            <Button
+                android:id="@+id/btn23"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button23" />
 
-        <!-- Line 5 -->
-        <!-- Gauche -->
-        <Button
-            android:id="@+id/btn50"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/gray_button"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/button50" />
-        <!-- Ok -->
-        <Button
-            android:id="@+id/btn51"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/gray_button"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/button51" />
-        <!-- Droite -->
-        <Button
-            android:id="@+id/btn52"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/gray_button"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/button52" />
-        <!-- Pgm + -->
-        <Button
-            android:id="@+id/btn53"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button53" />
+        </TableRow>
 
-        <!-- Line 6 -->
-        <!-- On/Off -->
-        <Button
-            android:id="@+id/btn60"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
+        <!-- Row 4 -->
+        <TableRow
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button60" />
-        <!-- Down -->
-        <Button
-            android:id="@+id/btn61"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/gray_button"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/button61" />
-        <!-- Free -->
-        <Button
-            android:id="@+id/btn62"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button62" />
-        <!--Pgm- -->
-        <Button
-            android:id="@+id/btn63"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_button"
-            android:textStyle="bold"
-            android:text="@string/button63" />
+            android:gravity="center_horizontal">
+            <!-- 9 -->
+            <Button
+                android:id="@+id/btn30"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button30" />
+            <!-- 0 -->
+            <Button
+                android:id="@+id/btn31"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button31" />
+            <!-- Pause -->
+            <Button
+                android:id="@+id/btn32"
+                android:background="@drawable/gray_button"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/button32" />
+            <!-- Rec -->
+            <Button
+                android:id="@+id/btn33"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button33" />
 
-    </androidx.gridlayout.widget.GridLayout>
+        </TableRow>
+
+        <!-- Row 5 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <!-- Vol- -->
+            <Button
+                android:id="@+id/btn40"
+                android:background="@drawable/blue_button"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/button40" />
+            <!-- Up -->
+            <Button
+                android:id="@+id/btn41"
+                android:background="@drawable/gray_button"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/button41" />
+            <!-- Mute -->
+            <Button
+                android:id="@+id/btn42"
+                android:background="@drawable/pink_button"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/button42" />
+            <!-- Vol+ -->
+            <Button
+                android:id="@+id/btn43"
+                android:background="@drawable/blue_button"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/button43" />
+
+        </TableRow>
+        <!-- Row 6 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <!-- Gauche -->
+            <Button
+                android:id="@+id/btn50"
+                android:background="@drawable/gray_button"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/button50" />
+            <!-- Ok -->
+            <Button
+                android:id="@+id/btn51"
+                android:background="@drawable/gray_button"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/button51" />
+            <!-- Droite -->
+            <Button
+                android:id="@+id/btn52"
+                android:background="@drawable/gray_button"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/button52" />
+            <!-- Pgm + -->
+            <Button
+                android:id="@+id/btn53"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button53" />
+
+        </TableRow>
+        <!-- Row 7 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <!-- On/Off -->
+            <Button
+                android:id="@+id/btn60"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button60" />
+            <!-- Down -->
+            <Button
+                android:id="@+id/btn61"
+                android:background="@drawable/gray_button"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/button61" />
+            <!-- Free -->
+            <Button
+                android:id="@+id/btn62"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button62" />
+            <!--Pgm- -->
+            <Button
+                android:id="@+id/btn63"
+                android:background="@drawable/white_button"
+                android:textStyle="bold"
+                android:text="@string/button63" />
+
+        </TableRow>
+    </TableLayout>
 </LinearLayout>

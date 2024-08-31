@@ -1,49 +1,64 @@
 package com.obooklage.revolumote4
 
 import android.os.Bundle
+import android.util.Log
+import android.widget.Button
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.obooklage.revolumote4.ui.theme.Revolumote4Theme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main)
-        /*
-        enableEdgeToEdge()
-        setContent {
-            Revolumote4Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }*/
+
+        /* Row 1 */
+        makeButtonEvt(R.id.btn00)
+        makeButtonEvt(R.id.btn01)
+        makeButtonEvt(R.id.btn02)
+        makeButtonEvt(R.id.btn03)
+
+        /* Row 2 */
+        makeButtonEvt(R.id.btn10)
+        makeButtonEvt(R.id.btn11)
+        makeButtonEvt(R.id.btn12)
+        makeButtonEvt(R.id.btn13)
+
+        /* Row 3 */
+        makeButtonEvt(R.id.btn20)
+        makeButtonEvt(R.id.btn21)
+        makeButtonEvt(R.id.btn22)
+        makeButtonEvt(R.id.btn23)
+
+        /* Row 4 */
+        makeButtonEvt(R.id.btn30)
+        makeButtonEvt(R.id.btn31)
+        makeButtonEvt(R.id.btn32)
+        makeButtonEvt(R.id.btn33)
+
+        /* Row 5 */
+        makeButtonEvt(R.id.btn40)
+        makeButtonEvt(R.id.btn41)
+        makeButtonEvt(R.id.btn42)
+        makeButtonEvt(R.id.btn43)
+
+        /* Row 6 */
+        makeButtonEvt(R.id.btn50)
+        makeButtonEvt(R.id.btn51)
+        makeButtonEvt(R.id.btn52)
+        makeButtonEvt(R.id.btn53)
+
+        /* Row 7 */
+        makeButtonEvt(R.id.btn60)
+        makeButtonEvt(R.id.btn61)
+        makeButtonEvt(R.id.btn62)
+        makeButtonEvt(R.id.btn63)
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+    private fun makeButtonEvt(id: Int) {
+        val btn: Button = findViewById(id)
+        btn.setOnClickListener { buttonPressed(btn) }
+    }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Revolumote4Theme {
-        Greeting("Android")
+    private fun buttonPressed(Button: Button) {
+        Log.d("FREEBOX !",Button.getText().toString())
     }
 }
