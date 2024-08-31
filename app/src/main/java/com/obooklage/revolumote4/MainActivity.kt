@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import androidx.activity.ComponentActivity
+import okhttp3.OkHttpClient
+import okhttp3.Request
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,9 +58,47 @@ class MainActivity : ComponentActivity() {
     private fun makeButtonEvt(id: Int) {
         val btn: Button = findViewById(id)
         btn.setOnClickListener { buttonPressed(btn) }
+        btn.setOnLongClickListener { buttonLongPressed(btn) }
     }
 
-    private fun buttonPressed(Button: Button) {
-        Log.d("FREEBOX !",Button.getText().toString())
+    private fun buttonPressed(btn: Button) {
+        when (btn.id) {
+            R.id.btn00 -> Log.d("FREEBOX !","BOUTON FLECHE !")
+            R.id.btn01 -> Log.d("FREEBOX !","BOUTON INFO !")
+        }
+    }
+
+    private fun buttonLongPressed(btn: Button): Boolean {
+        when (btn.id) {
+            R.id.btn00 -> Log.d("FREEBOX LONG !","BOUTON FLECHE !")
+            R.id.btn01 -> Log.d("FREEBOX LONG !","BOUTON INFO !")
+        }
+        return true
+    }
+
+    private fun SendKey(Key: String, longpress: Boolean) {
+        /*
+        editTextRemoteCode = prefs.getString("editTextRemoteCode", "")
+        if (editTextRemoteCode.contentEquals("")) {
+            Toast.makeText(this, getString(R.string.main_code_missing), Toast.LENGTH_SHORT).show()
+            return
+        }*/
+
+        val editTextRemoteCode = "12345"
+        var serverurl =
+            "http://hd1.freebox.fr/pub/remote_control?code=$editTextRemoteCode"
+        if (longpress) serverurl = "$serverurl&long=true"
+
+        Log.d("SendKey !",serverurl)
+        // synchronousGetRequest("$serverurl&key=$Key")
+    }
+
+    private fun synchronousGetRequest(url: String): String {
+        val client = OkHttpClient()
+        val request = Request.Builder()
+            .url(url)
+            .build()
+        val response = client.newCall(request).execute()
+        return response.body?.string() ?: ""
     }
 }
