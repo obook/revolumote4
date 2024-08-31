@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">revolumote4</string>
+    <!-- line 0 -->
+    <string name="button00">←</string>
+    <string name="button01">Info</string>
+    <string name="button02">Menu</string>
+    <string name="button03">Rech</string>
+    <!-- line 1 -->
+    <string name="button10">1</string>
+    <string name="button11">2</string>
+    <string name="button12">3</string>
+    <string name="button13">4</string>
+    <!-- line 2 -->
+    <string name="button20">5</string>
+    <string name="button21">6</string>
+    <string name="button22">7</string>
+    <string name="button23">8</string>
+    <!-- line 3 -->
+    <string name="button30">9</string>
+    <string name="button31">0</string>
+    <string name="button32">Pause</string>
+    <string name="button33">Rec</string>
+    <!-- line 4 -->
+    <string name="button40">Vol-</string>
+    <string name="button41">↑</string>
+    <string name="button42">Mute</string>
+    <string name="button43">Vol+</string>
+    <!-- line 5 -->
+    <string name="button50">←</string>
+    <string name="button51">OK</string>
+    <string name="button52">→</string>
+    <string name="button53">Pgm+</string>
+    <!-- line 6 -->
+    <string name="button60">On/Off</string>
+    <string name="button61">↓</string>
+    <string name="button62">Free</string>
+    <string name="button63">Pgm-</string>
 </resources>

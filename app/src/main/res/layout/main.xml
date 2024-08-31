@@ -13,186 +13,255 @@
 
         <!-- Line 0 -->
 
+        <!-- fleche gauche -->
         <Button
             android:id="@+id/btn00"
             android:layout_width="100dp"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GAUCHE" />
-
+            android:background="@drawable/red_button"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/button00" />
+        <!-- Info -->
         <Button
             android:id="@+id/btn01"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Info" />
-
+            android:background="@drawable/yellow_button"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/button01" />
+        <!-- Menu -->
         <Button
             android:id="@+id/btn02"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Menu" />
-
+            android:background="@drawable/green_button"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/button02" />
+        <!-- Rech -->
         <Button
             android:id="@+id/btn03"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Rech" />
+            android:background="@drawable/blue_button"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/button03" />
 
         <!-- Line 1 -->
-
+        <!-- 1 -->
         <Button
             android:id="@+id/btn10"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="1" />
-
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button10" />
+        <!-- 2 -->
         <Button
             android:id="@+id/btn11"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="2" />
-
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button11" />
+        <!-- 3 -->
         <Button
             android:id="@+id/btn12"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="3" />
-
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button12" />
+        <!-- 4 -->
         <Button
             android:id="@+id/btn13"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="4" />
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button13" />
 
         <!-- Line 2 -->
-
+        <!-- 5 -->
         <Button
             android:id="@+id/btn20"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="5" />
-
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button20" />
+        <!-- 6 -->
         <Button
             android:id="@+id/btn21"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="6" />
-
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button21" />
+        <!-- 7 -->
         <Button
             android:id="@+id/btn22"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="7" />
-
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button22" />
+        <!-- 8 -->
         <Button
             android:id="@+id/btn23"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="8" />
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button23" />
 
         <!-- Line 3 -->
-
+        <!-- 9 -->
         <Button
             android:id="@+id/btn30"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="9" />
-
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button30" />
+        <!-- 0 -->
         <Button
             android:id="@+id/btn31"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="0" />
-
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button31" />
+        <!-- Pause -->
         <Button
             android:id="@+id/btn32"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Pause" />
-
+            android:background="@drawable/gray_button"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/button32" />
+        <!-- Rec -->
         <Button
             android:id="@+id/btn33"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Rec" />
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button33" />
 
         <!-- Line 4 -->
-
+        <!-- Vol- -->
         <Button
             android:id="@+id/btn40"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Vol-" />
-
+            android:background="@drawable/blue_button"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/button40" />
+        <!-- Up -->
         <Button
             android:id="@+id/btn41"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="UP" />
-
+            android:background="@drawable/gray_button"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/button41" />
+        <!-- Mute -->
         <Button
             android:id="@+id/btn42"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Mute" />
-
+            android:background="@drawable/pink_button"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/button42" />
+        <!-- Vol+ -->
         <Button
             android:id="@+id/btn43"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Vol+" />
+            android:background="@drawable/blue_button"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/button43" />
 
         <!-- Line 5 -->
-
+        <!-- Gauche -->
         <Button
-            android:id="@+id/btn40"
+            android:id="@+id/btn50"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="GAUCHE" />
-
+            android:background="@drawable/gray_button"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/button50" />
+        <!-- Ok -->
         <Button
-            android:id="@+id/btn41"
+            android:id="@+id/btn51"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="OK" />
-
+            android:background="@drawable/gray_button"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/button51" />
+        <!-- Droite -->
         <Button
-            android:id="@+id/btn42"
+            android:id="@+id/btn52"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="DROITE" />
-
+            android:background="@drawable/gray_button"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/button52" />
+        <!-- Pgm + -->
         <Button
-            android:id="@+id/btn43"
+            android:id="@+id/btn53"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="PGM+" />
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button53" />
 
         <!-- Line 6 -->
-
+        <!-- On/Off -->
         <Button
-            android:id="@+id/btn40"
+            android:id="@+id/btn60"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="On/Off" />
-
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button60" />
+        <!-- Down -->
         <Button
-            android:id="@+id/btn41"
+            android:id="@+id/btn61"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="DOWN" />
-
+            android:background="@drawable/gray_button"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="@string/button61" />
+        <!-- Free -->
         <Button
-            android:id="@+id/btn42"
+            android:id="@+id/btn62"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Free" />
-
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button62" />
+        <!--Pgm- -->
         <Button
-            android:id="@+id/btn43"
+            android:id="@+id/btn63"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="PGM-" />
+            android:background="@drawable/white_button"
+            android:textStyle="bold"
+            android:text="@string/button63" />
 
     </androidx.gridlayout.widget.GridLayout>
 </LinearLayout>
