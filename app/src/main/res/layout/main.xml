@@ -19,7 +19,7 @@
             android:layout_height="0sp">
             <!-- fleche gauche -->
             <Button
-                android:id="@+id/btn00"
+                android:id="@+id/btn_red"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/red_button"
@@ -28,7 +28,7 @@
                 android:text="@string/button00" />
             <!-- Info -->
             <Button
-                android:id="@+id/btn01"
+                android:id="@+id/btn_yellow"
                 android:layout_height="fill_parent"
                 android:background="@drawable/yellow_button"
                 android:textStyle="bold"
@@ -36,7 +36,7 @@
                 android:text="@string/button01" />
             <!-- Menu -->
             <Button
-                android:id="@+id/btn02"
+                android:id="@+id/btn_green"
                 android:layout_height="fill_parent"
                 android:background="@drawable/green_button"
                 android:textStyle="bold"
@@ -44,7 +44,7 @@
                 android:text="@string/button02" />
             <!-- Rech -->
             <Button
-                android:id="@+id/btn03"
+                android:id="@+id/btn_blue"
                 android:layout_height="fill_parent"
                 android:background="@drawable/blue_button"
                 android:textStyle="bold"
@@ -61,25 +61,25 @@
             android:gravity="center_horizontal">
             <!-- 1 -->
             <Button
-                android:id="@+id/btn10"
+                android:id="@+id/btn_1"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button10" />
             <!-- 2 -->
             <Button
-                android:id="@+id/btn11"
+                android:id="@+id/btn_2"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button11" />
             <!-- 3 -->
             <Button
-                android:id="@+id/btn12"
+                android:id="@+id/btn_3"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button12" />
             <!-- 4 -->
             <Button
-                android:id="@+id/btn13"
+                android:id="@+id/btn_4"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button13" />
@@ -91,27 +91,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal">
-            <!-- 1 -->
+            <!-- 5 -->
             <Button
-                android:id="@+id/btn20"
+                android:id="@+id/btn_5"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button20" />
             <!-- 6 -->
             <Button
-                android:id="@+id/btn21"
+                android:id="@+id/btn_6"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button21" />
             <!-- 7 -->
             <Button
-                android:id="@+id/btn22"
+                android:id="@+id/btn_7"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button22" />
             <!-- 8 -->
             <Button
-                android:id="@+id/btn23"
+                android:id="@+id/btn_8"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button23" />
@@ -125,27 +125,27 @@
             android:gravity="center_horizontal">
             <!-- 9 -->
             <Button
-                android:id="@+id/btn30"
+                android:id="@+id/btn_9"
                 android:layout_height="wrap_content"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button30" />
             <!-- 0 -->
             <Button
-                android:id="@+id/btn31"
+                android:id="@+id/btn_0"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button31" />
             <!-- Pause -->
             <Button
-                android:id="@+id/btn32"
+                android:id="@+id/btn_pause"
                 android:background="@drawable/gray_button"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:text="@string/button32" />
             <!-- Rec -->
             <Button
-                android:id="@+id/btn33"
+                android:id="@+id/btn_rec"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button33" />
@@ -159,28 +159,28 @@
             android:gravity="center_horizontal">
             <!-- Vol- -->
             <Button
-                android:id="@+id/btn40"
+                android:id="@+id/btn_vol_minus"
                 android:background="@drawable/blue_button"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:text="@string/button40" />
             <!-- Up -->
             <Button
-                android:id="@+id/btn41"
+                android:id="@+id/btn_up"
                 android:background="@drawable/gray_button"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:text="@string/button41" />
             <!-- Mute -->
             <Button
-                android:id="@+id/btn42"
+                android:id="@+id/btn_mute"
                 android:background="@drawable/pink_button"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:text="@string/button42" />
             <!-- Vol+ -->
             <Button
-                android:id="@+id/btn43"
+                android:id="@+id/btn_vol_plus"
                 android:background="@drawable/blue_button"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
@@ -194,28 +194,28 @@
             android:gravity="center_horizontal">
             <!-- Gauche -->
             <Button
-                android:id="@+id/btn50"
+                android:id="@+id/btn_left"
                 android:background="@drawable/gray_button"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:text="@string/button50" />
             <!-- Ok -->
             <Button
-                android:id="@+id/btn51"
+                android:id="@+id/btn_ok"
                 android:background="@drawable/gray_button"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:text="@string/button51" />
             <!-- Droite -->
             <Button
-                android:id="@+id/btn52"
+                android:id="@+id/btn_right"
                 android:background="@drawable/gray_button"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:text="@string/button52" />
             <!-- Pgm + -->
             <Button
-                android:id="@+id/btn53"
+                android:id="@+id/btn_pgm_plus"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button53" />
@@ -228,26 +228,26 @@
             android:gravity="center_horizontal">
             <!-- On/Off -->
             <Button
-                android:id="@+id/btn60"
+                android:id="@+id/btn_power"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button60" />
             <!-- Down -->
             <Button
-                android:id="@+id/btn61"
+                android:id="@+id/btn_down"
                 android:background="@drawable/gray_button"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:text="@string/button61" />
             <!-- Free -->
             <Button
-                android:id="@+id/btn62"
+                android:id="@+id/btn_free"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button62" />
             <!--Pgm- -->
             <Button
-                android:id="@+id/btn63"
+                android:id="@+id/btn_pgm_minus"
                 android:background="@drawable/white_button"
                 android:textStyle="bold"
                 android:text="@string/button63" />
