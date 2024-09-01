@@ -162,6 +162,11 @@ class MainActivity : ComponentActivity() {
             return
         }
 
+        /*
+        Il existe le paramètre :
+        &repeat=1
+         */
+
         var serverurl =
             "http://hd1.freebox.fr/pub/remote_control?code=$KEY_CODE&key=$key"
         if (longpress) serverurl = "$serverurl&long=true"
