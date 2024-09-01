@@ -174,9 +174,3 @@ class MainActivity : ComponentActivity() {
         return response.body?.string() ?: ""
     }
 }
-
-class MySettingsFragment : PreferenceFragmentCompat() {
-    override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        setPreferencesFromResource(R.xml.preferences, rootKey)
-    }
-}
