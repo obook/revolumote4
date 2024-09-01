@@ -71,4 +71,5 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation("androidx.preference:preference-ktx:1.2.0")
 }

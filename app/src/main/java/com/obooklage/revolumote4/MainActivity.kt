@@ -4,12 +4,19 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import androidx.activity.ComponentActivity
+import androidx.preference.PreferenceFragmentCompat
 import okhttp3.OkHttpClient
 import okhttp3.Request
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+/*
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.settings_container, MySettingsFragment())
+            .commit()
+*/
         setContentView(R.layout.main)
 
         /* Row 1 */
@@ -165,5 +172,11 @@ class MainActivity : ComponentActivity() {
             .build()
         val response = client.newCall(request).execute()
         return response.body?.string() ?: ""
+    }
+}
+
+class MySettingsFragment : PreferenceFragmentCompat() {
+    override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
+        setPreferencesFromResource(R.xml.preferences, rootKey)
     }
 }
