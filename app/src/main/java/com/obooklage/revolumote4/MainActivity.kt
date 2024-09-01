@@ -6,26 +6,23 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.activity.ComponentActivity
+import androidx.lifecycle.asLiveData
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 import okhttp3.OkHttpClient
 import okhttp3.Request
 
 class MainActivity : ComponentActivity() {
-    private val KEY_CODE = ""
     private lateinit var datastore: PrefsDataStore
+    private var KEY_CODE = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // Initialising
         datastore = PrefsDataStore(this@MainActivity)
-        lifecycleScope.launch {
-            //val result =  callGetApi()
-            datastore.readCodeToPreferencesStore(this@MainActivity)
-            //Log.d("Réglage","Code télécommande =" + code+" sauvé")
-            //onResult(result)
-        }
+        observeDatastore()
 
         setContentView(R.layout.main)
 
@@ -159,16 +156,14 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun sendKey(key: String, longpress: Boolean) {
-        /*
-        editTextRemoteCode = prefs.getString("editTextRemoteCode", "")
-        if (editTextRemoteCode.contentEquals("")) {
-            Toast.makeText(this, getString(R.string.main_code_missing), Toast.LENGTH_SHORT).show()
-            return
-        }*/
 
-        val editTextRemoteCode = "12345"
+        if (KEY_CODE.contentEquals("")) {
+            Toast.makeText(this, getString(R.string.code_missing), Toast.LENGTH_SHORT).show()
+            return
+        }
+
         var serverurl =
-            "http://hd1.freebox.fr/pub/remote_control?code=$editTextRemoteCode&key=$key"
+            "http://hd1.freebox.fr/pub/remote_control?code=$KEY_CODE&key=$key"
         if (longpress) serverurl = "$serverurl&long=true"
 
         Log.d("sendKey !",serverurl)
@@ -186,6 +181,7 @@ class MainActivity : ComponentActivity() {
 
     private fun showSetCodeDialog(c: Context) {
         val taskEditText = EditText(c)
+        taskEditText.setText(KEY_CODE)
         val dialog = AlertDialog.Builder(c)
             .setTitle(getString(R.string.dialog_title))
             .setMessage(getString(R.string.dialog_text))
@@ -194,7 +190,7 @@ class MainActivity : ComponentActivity() {
               dialog, which -> val code = taskEditText.text.toString()
                 lifecycleScope.launch {
                     datastore.saveCodeToPreferencesStore(code,this@MainActivity)
-                    Log.d("Réglage","Code télécommande =" + code+" sauvé")
+                    /* Toast.makeText(this, getString(R.string.code_saved), Toast.LENGTH_SHORT).show() */
                 }
             }
             .setNegativeButton(getString(R.string.dialog_abort), null)
@@ -202,4 +198,10 @@ class MainActivity : ComponentActivity() {
         dialog.show()
     }
 
+    private fun observeDatastore() {
+        datastore.codeFlow.asLiveData().observe(this) {
+            KEY_CODE = it.toString()
+            Log.e("observeDatastore","KEY_CODE=["+KEY_CODE+"]")
+        }
+    }
 }

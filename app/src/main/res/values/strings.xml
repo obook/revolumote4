@@ -58,4 +58,8 @@
     <string name="dialog_valid">Valider</string>
     <string name="dialog_abort">Abandon</string>
 
+    <!-- Code -->
+    <string name="code_missing">Maintenez appuyé la touche OK</string>
+    <string name="code_saved">Code sauvegardé</string>
+
 </resources>
