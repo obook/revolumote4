@@ -1,0 +1,37 @@
+Source : https://dev.freebox.fr/bugs/task/4327
+
+Le 04.02.2011 00:48
+
+Pour la freebox hd une commande comme : http://hd1.freebox.fr/pub/remote_control?code=&key=6 permet de mettre la 6 sur votre TV. les *** étant le code de votre télécommande, que vous trouverez dans dans les menu de la FB.
+
+Voici quelques explications trouvé sur le site freenews pour la FB V5 :
+_
+* API de télécommande virtuelle :
+Vous pouvez désormais simuler des appuis sur la télécommande de la freebox en appelant l’url suivante : http://hd1.freebox.fr/pub/remote_control? Voici de haut en bas, et de gauche à droite (par rapport à la télécommande physique) les valeurs disponibles pour :
+
+red : le bouton rouge (B)
+green : le bouton vert (A)
+yellow : le bouton jaune (Y)
+blue : le bouton bleu (X)
+power : la touche rouge on/off
+list : la touche d’affichage de la liste des chaînes entre power et tv
+tv : la touche verte TV de commutation péritel.
+0 à 9 : les touches 0 à 9
+back : la touche jaune en dessous du 7
+swap : la touche en dessous du 9
+info, mail, help, pip : les touches bleues à droite des numéros de chaîne
+epg, media, options : les fonctionnalités “secondaires” de ces mêmes touches
+vol_inc, vol_dec : volume+ et volume-
+prgm_inc, prgm_dec : program+ et program-
+ok : touche OK
+up, right, down, left : les touches directionnelles entourant le OK
+mute : la touche de mise en sourdine
+home : la touche free
+rec : la touche d’enregistrement
+bwd : la touche de retour en arrière («)
+prev : la touche “précédent” (|«)
+play : la touche lecture/pause
+fwd : la touche d’avance rapide (»)
+next : la touche “suivant” (»|)
+
+Les touches restantes (start, select, L, R et le pavé directionnel des jeux) ne sont pas accessibles via cette interface Le firmware 1.6.5 est disponible, un nouveau paramètre “code” est maintenant obligatoire pour utiliser l’API télécommande. Exemple : http://hd1.freebox.fr/pub/remote_control?key=<KEY>&code=12345678 Le code à utiliser est présent sur la page “Informations Générales” de votre Freebox HD.
