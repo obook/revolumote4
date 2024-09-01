@@ -63,85 +63,85 @@ class MainActivity : ComponentActivity() {
 
     private fun buttonPressed(btn: Button) {
         when (btn.id) {
-            R.id.btn_red -> SendKey("red",false)
-            R.id.btn_yellow -> SendKey("yellow",false)
-            R.id.btn_green -> SendKey("green",false)
-            R.id.btn_blue -> SendKey("blue",false)
+            R.id.btn_red -> sendKey("red",false)
+            R.id.btn_yellow -> sendKey("yellow",false)
+            R.id.btn_green -> sendKey("green",false)
+            R.id.btn_blue -> sendKey("blue",false)
 
-            R.id.btn_1 -> SendKey("1",false)
-            R.id.btn_2 -> SendKey("2",false)
-            R.id.btn_3 -> SendKey("3",false)
-            R.id.btn_4 -> SendKey("4",false)
+            R.id.btn_1 -> sendKey("1",false)
+            R.id.btn_2 -> sendKey("2",false)
+            R.id.btn_3 -> sendKey("3",false)
+            R.id.btn_4 -> sendKey("4",false)
 
-            R.id.btn_5 -> SendKey("5",false)
-            R.id.btn_6 -> SendKey("6",false)
-            R.id.btn_7 -> SendKey("7",false)
-            R.id.btn_8 -> SendKey("8",false)
+            R.id.btn_5 -> sendKey("5",false)
+            R.id.btn_6 -> sendKey("6",false)
+            R.id.btn_7 -> sendKey("7",false)
+            R.id.btn_8 -> sendKey("8",false)
 
-            R.id.btn_9 -> SendKey("9",false)
-            R.id.btn_0 -> SendKey("0",false)
-            R.id.btn_pause -> SendKey("pause ",false) /* ????????????????? */
-            R.id.btn_rec -> SendKey("rec",false)
+            R.id.btn_9 -> sendKey("9",false)
+            R.id.btn_0 -> sendKey("0",false)
+            R.id.btn_pause -> sendKey("pause",false) /* ????????????????? */
+            R.id.btn_rec -> sendKey("rec",false)
 
-            R.id.btn_vol_minus -> SendKey("vol_dec",false)
-            R.id.btn_up -> SendKey("up",false)
-            R.id.btn_mute -> SendKey("mute",false)
-            R.id.btn_vol_plus -> SendKey("vol_inc",false)
+            R.id.btn_vol_minus -> sendKey("vol_dec",false)
+            R.id.btn_up -> sendKey("up",false)
+            R.id.btn_mute -> sendKey("mute",false)
+            R.id.btn_vol_plus -> sendKey("vol_inc",false)
 
-            R.id.btn_left -> SendKey("left",false)
-            R.id.btn_ok -> SendKey("ok",false)
-            R.id.btn_right -> SendKey("right",false)
-            R.id.btn_pgm_plus -> SendKey("prgm_inc",false)
+            R.id.btn_left -> sendKey("left",false)
+            R.id.btn_ok -> sendKey("ok",false)
+            R.id.btn_right -> sendKey("right",false)
+            R.id.btn_pgm_plus -> sendKey("prgm_inc",false)
 
-            R.id.btn_power -> SendKey("power",false)
-            R.id.btn_down -> SendKey("down",false)
-            R.id.btn_free -> SendKey("home",false)
-            R.id.btn_pgm_minus -> SendKey("prgm_dec",false)
+            R.id.btn_power -> sendKey("power",false)
+            R.id.btn_down -> sendKey("down",false)
+            R.id.btn_free -> sendKey("home",false)
+            R.id.btn_pgm_minus -> sendKey("prgm_dec",false)
 
         }
     }
 
     private fun buttonLongPressed(btn: Button): Boolean {
         when (btn.id) {
-            R.id.btn_red -> SendKey("red",true)
-            R.id.btn_yellow -> SendKey("yellow",true)
-            R.id.btn_green -> SendKey("green",true)
-            R.id.btn_blue -> SendKey("blue",true)
+            R.id.btn_red -> sendKey("red",true)
+            R.id.btn_yellow -> sendKey("yellow",true)
+            R.id.btn_green -> sendKey("green",true)
+            R.id.btn_blue -> sendKey("blue",true)
 
-            R.id.btn_1 -> SendKey("1",true)
-            R.id.btn_2 -> SendKey("2",true)
-            R.id.btn_3 -> SendKey("3",true)
-            R.id.btn_4 -> SendKey("4",true)
+            R.id.btn_1 -> sendKey("1",true)
+            R.id.btn_2 -> sendKey("2",true)
+            R.id.btn_3 -> sendKey("3",true)
+            R.id.btn_4 -> sendKey("4",true)
 
-            R.id.btn_5 -> SendKey("5",true)
-            R.id.btn_6 -> SendKey("6",true)
-            R.id.btn_7 -> SendKey("7",true)
-            R.id.btn_8 -> SendKey("8",true)
+            R.id.btn_5 -> sendKey("5",true)
+            R.id.btn_6 -> sendKey("6",true)
+            R.id.btn_7 -> sendKey("7",true)
+            R.id.btn_8 -> sendKey("8",true)
 
-            R.id.btn_9 -> SendKey("9",true)
-            R.id.btn_0 -> SendKey("0",true)
-            R.id.btn_pause -> SendKey("pause ",true) /* ????????????????? */
-            R.id.btn_rec -> SendKey("rec",true)
+            R.id.btn_9 -> sendKey("9",true)
+            R.id.btn_0 -> sendKey("0",true)
+            R.id.btn_pause -> sendKey("pause",true) /* ????????????????? */
+            R.id.btn_rec -> sendKey("rec",true)
 
-            R.id.btn_vol_minus -> SendKey("vol_dec",true)
-            R.id.btn_up -> SendKey("up",true)
-            R.id.btn_mute -> SendKey("mute",true)
-            R.id.btn_vol_plus -> SendKey("vol_inc",true)
+            R.id.btn_vol_minus -> sendKey("vol_dec",true)
+            R.id.btn_up -> sendKey("up",true)
+            R.id.btn_mute -> sendKey("mute",true)
+            R.id.btn_vol_plus -> sendKey("vol_inc",true)
 
-            R.id.btn_left -> SendKey("left",true)
-            R.id.btn_ok -> SendKey("ok",true)
-            R.id.btn_right -> SendKey("right",true)
-            R.id.btn_pgm_plus -> SendKey("prgm_inc",true)
+            R.id.btn_left -> sendKey("left",true)
+            R.id.btn_ok -> sendKey("ok",true)
+            R.id.btn_right -> sendKey("right",true)
+            R.id.btn_pgm_plus -> sendKey("prgm_inc",true)
 
-            R.id.btn_power -> SendKey("power",true)
-            R.id.btn_down -> SendKey("down",true)
-            R.id.btn_free -> SendKey("home",true)
-            R.id.btn_pgm_minus -> SendKey("prgm_dec",true)
+            R.id.btn_power -> sendKey("power",true)
+            R.id.btn_down -> sendKey("down",true)
+            R.id.btn_free -> sendKey("home",true)
+            R.id.btn_pgm_minus -> sendKey("prgm_dec",true)
         }
         return true
     }
 
-    private fun SendKey(Key: String, longpress: Boolean) {
+    private fun sendKey(Key: String, longpress: Boolean) {
         /*
         editTextRemoteCode = prefs.getString("editTextRemoteCode", "")
         if (editTextRemoteCode.contentEquals("")) {
@@ -154,7 +154,7 @@ class MainActivity : ComponentActivity() {
             "http://hd1.freebox.fr/pub/remote_control?code=$editTextRemoteCode&key=$Key"
         if (longpress) serverurl = "$serverurl&long=true"
 
-        Log.d("SendKey !",serverurl)
+        Log.d("sendKey !",serverurl)
         // synchronousGetRequest("$serverurl")
     }
 
