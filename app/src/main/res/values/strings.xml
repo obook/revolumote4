@@ -51,4 +51,11 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <!-- dialbox -->
+    <string name="dialog_title">Freebox Révolution</string>
+    <string name="dialog_text">Entrer le code de la télécommande réseau affiché dans le menu Système de votre Freebox TV</string>
+    <string name="dialog_valid">Valider</string>
+    <string name="dialog_abort">Abandon</string>
+
 </resources>

@@ -1,22 +1,32 @@
 package com.obooklage.revolumote4
 
+import android.app.AlertDialog
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import androidx.activity.ComponentActivity
-import androidx.preference.PreferenceFragmentCompat
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
 import okhttp3.OkHttpClient
 import okhttp3.Request
 
 class MainActivity : ComponentActivity() {
+    private val KEY_CODE = ""
+    private lateinit var datastore: PrefsDataStore
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-/*
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.settings_container, MySettingsFragment())
-            .commit()
-*/
+        // Initialising
+        datastore = PrefsDataStore(this@MainActivity)
+        lifecycleScope.launch {
+            //val result =  callGetApi()
+            datastore.readCodeToPreferencesStore(this@MainActivity)
+            //Log.d("Réglage","Code télécommande =" + code+" sauvé")
+            //onResult(result)
+        }
+
         setContentView(R.layout.main)
 
         /* Row 1 */
@@ -60,6 +70,7 @@ class MainActivity : ComponentActivity() {
         makeButtonEvt(R.id.button_down)
         makeButtonEvt(R.id.button_home)
         makeButtonEvt(R.id.button_prgm_dec)
+
     }
 
     private fun makeButtonEvt(id: Int) {
@@ -104,7 +115,6 @@ class MainActivity : ComponentActivity() {
             R.id.button_down -> sendKey("down",false)
             R.id.button_home -> sendKey("home",false)
             R.id.button_prgm_dec -> sendKey("prgm_dec",false)
-
         }
     }
 
@@ -136,7 +146,7 @@ class MainActivity : ComponentActivity() {
             R.id.button_vol_inc -> sendKey("vol_inc",true)
 
             R.id.button_left -> sendKey("left",true)
-            R.id.button_ok -> sendKey("ok",true)
+            R.id.button_ok -> showSetCodeDialog(this@MainActivity) // sendKey("ok",true)
             R.id.button_right -> sendKey("right",true)
             R.id.button_prgm_inc -> sendKey("prgm_inc",true)
 
@@ -173,4 +183,23 @@ class MainActivity : ComponentActivity() {
         val response = client.newCall(request).execute()
         return response.body?.string() ?: ""
     }
+
+    private fun showSetCodeDialog(c: Context) {
+        val taskEditText = EditText(c)
+        val dialog = AlertDialog.Builder(c)
+            .setTitle(getString(R.string.dialog_title))
+            .setMessage(getString(R.string.dialog_text))
+            .setView(taskEditText)
+            .setPositiveButton(getString(R.string.dialog_valid)) {
+              dialog, which -> val code = taskEditText.text.toString()
+                lifecycleScope.launch {
+                    datastore.saveCodeToPreferencesStore(code,this@MainActivity)
+                    Log.d("Réglage","Code télécommande =" + code+" sauvé")
+                }
+            }
+            .setNegativeButton(getString(R.string.dialog_abort), null)
+            .create()
+        dialog.show()
+    }
+
 }
