@@ -20,46 +20,46 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.main)
 
         /* Row 1 */
-        makeButtonEvt(R.id.btn_red)
-        makeButtonEvt(R.id.btn_yellow)
-        makeButtonEvt(R.id.btn_green)
-        makeButtonEvt(R.id.btn_blue)
+        makeButtonEvt(R.id.button_red)
+        makeButtonEvt(R.id.button_yellow)
+        makeButtonEvt(R.id.button_green)
+        makeButtonEvt(R.id.button_blue)
 
         /* Row 2 */
-        makeButtonEvt(R.id.btn_1)
-        makeButtonEvt(R.id.btn_2)
-        makeButtonEvt(R.id.btn_3)
-        makeButtonEvt(R.id.btn_4)
+        makeButtonEvt(R.id.button_1)
+        makeButtonEvt(R.id.button_2)
+        makeButtonEvt(R.id.button_3)
+        makeButtonEvt(R.id.button_4)
 
         /* Row 3 */
-        makeButtonEvt(R.id.btn_5)
-        makeButtonEvt(R.id.btn_6)
-        makeButtonEvt(R.id.btn_7)
-        makeButtonEvt(R.id.btn_8)
+        makeButtonEvt(R.id.button_5)
+        makeButtonEvt(R.id.button_6)
+        makeButtonEvt(R.id.button_7)
+        makeButtonEvt(R.id.button_8)
 
         /* Row 4 */
-        makeButtonEvt(R.id.btn_9)
-        makeButtonEvt(R.id.btn_0)
-        makeButtonEvt(R.id.btn_pause)
-        makeButtonEvt(R.id.btn_rec)
+        makeButtonEvt(R.id.button_9)
+        makeButtonEvt(R.id.button_0)
+        makeButtonEvt(R.id.button_play) /* PAUSE ? */
+        makeButtonEvt(R.id.button_rec)
 
         /* Row 5 */
-        makeButtonEvt(R.id.btn_vol_minus)
-        makeButtonEvt(R.id.btn_up)
-        makeButtonEvt(R.id.btn_mute)
-        makeButtonEvt(R.id.btn_vol_plus)
+        makeButtonEvt(R.id.button_vol_dec)
+        makeButtonEvt(R.id.button_up)
+        makeButtonEvt(R.id.button_mute)
+        makeButtonEvt(R.id.button_vol_inc)
 
         /* Row 6 */
-        makeButtonEvt(R.id.btn_left)
-        makeButtonEvt(R.id.btn_ok)
-        makeButtonEvt(R.id.btn_right)
-        makeButtonEvt(R.id.btn_pgm_plus)
+        makeButtonEvt(R.id.button_left)
+        makeButtonEvt(R.id.button_ok)
+        makeButtonEvt(R.id.button_right)
+        makeButtonEvt(R.id.button_prgm_inc)
 
         /* Row 7 */
-        makeButtonEvt(R.id.btn_power)
-        makeButtonEvt(R.id.btn_down)
-        makeButtonEvt(R.id.btn_free)
-        makeButtonEvt(R.id.btn_pgm_minus)
+        makeButtonEvt(R.id.button_power)
+        makeButtonEvt(R.id.button_down)
+        makeButtonEvt(R.id.button_home)
+        makeButtonEvt(R.id.button_prgm_dec)
     }
 
     private fun makeButtonEvt(id: Int) {
@@ -70,85 +70,85 @@ class MainActivity : ComponentActivity() {
 
     private fun buttonPressed(btn: Button) {
         when (btn.id) {
-            R.id.btn_red -> sendKey("red",false)
-            R.id.btn_yellow -> sendKey("yellow",false)
-            R.id.btn_green -> sendKey("green",false)
-            R.id.btn_blue -> sendKey("blue",false)
+            R.id.button_red -> sendKey("red",false)
+            R.id.button_yellow -> sendKey("yellow",false)
+            R.id.button_green -> sendKey("green",false)
+            R.id.button_blue -> sendKey("blue",false)
 
-            R.id.btn_1 -> sendKey("1",false)
-            R.id.btn_2 -> sendKey("2",false)
-            R.id.btn_3 -> sendKey("3",false)
-            R.id.btn_4 -> sendKey("4",false)
+            R.id.button_1 -> sendKey("1",false)
+            R.id.button_2 -> sendKey("2",false)
+            R.id.button_3 -> sendKey("3",false)
+            R.id.button_4 -> sendKey("4",false)
 
-            R.id.btn_5 -> sendKey("5",false)
-            R.id.btn_6 -> sendKey("6",false)
-            R.id.btn_7 -> sendKey("7",false)
-            R.id.btn_8 -> sendKey("8",false)
+            R.id.button_5 -> sendKey("5",false)
+            R.id.button_6 -> sendKey("6",false)
+            R.id.button_7 -> sendKey("7",false)
+            R.id.button_8 -> sendKey("8",false)
 
-            R.id.btn_9 -> sendKey("9",false)
-            R.id.btn_0 -> sendKey("0",false)
-            R.id.btn_pause -> sendKey("pause",false) /* ????????????????? */
-            R.id.btn_rec -> sendKey("rec",false)
+            R.id.button_9 -> sendKey("9",false)
+            R.id.button_0 -> sendKey("0",false)
+            R.id.button_play -> sendKey("pause",false) /* ????????????????? */
+            R.id.button_rec -> sendKey("rec",false)
 
-            R.id.btn_vol_minus -> sendKey("vol_dec",false)
-            R.id.btn_up -> sendKey("up",false)
-            R.id.btn_mute -> sendKey("mute",false)
-            R.id.btn_vol_plus -> sendKey("vol_inc",false)
+            R.id.button_vol_dec -> sendKey("vol_dec",false)
+            R.id.button_up -> sendKey("up",false)
+            R.id.button_mute -> sendKey("mute",false)
+            R.id.button_vol_inc -> sendKey("vol_inc",false)
 
-            R.id.btn_left -> sendKey("left",false)
-            R.id.btn_ok -> sendKey("ok",false)
-            R.id.btn_right -> sendKey("right",false)
-            R.id.btn_pgm_plus -> sendKey("prgm_inc",false)
+            R.id.button_left -> sendKey("left",false)
+            R.id.button_ok -> sendKey("ok",false)
+            R.id.button_right -> sendKey("right",false)
+            R.id.button_prgm_inc -> sendKey("prgm_inc",false)
 
-            R.id.btn_power -> sendKey("power",false)
-            R.id.btn_down -> sendKey("down",false)
-            R.id.btn_free -> sendKey("home",false)
-            R.id.btn_pgm_minus -> sendKey("prgm_dec",false)
+            R.id.button_power -> sendKey("power",false)
+            R.id.button_down -> sendKey("down",false)
+            R.id.button_home -> sendKey("home",false)
+            R.id.button_prgm_dec -> sendKey("prgm_dec",false)
 
         }
     }
 
     private fun buttonLongPressed(btn: Button): Boolean {
         when (btn.id) {
-            R.id.btn_red -> sendKey("red",true)
-            R.id.btn_yellow -> sendKey("yellow",true)
-            R.id.btn_green -> sendKey("green",true)
-            R.id.btn_blue -> sendKey("blue",true)
+            R.id.button_red -> sendKey("red",true)
+            R.id.button_yellow -> sendKey("yellow",true)
+            R.id.button_green -> sendKey("green",true)
+            R.id.button_blue -> sendKey("blue",true)
 
-            R.id.btn_1 -> sendKey("1",true)
-            R.id.btn_2 -> sendKey("2",true)
-            R.id.btn_3 -> sendKey("3",true)
-            R.id.btn_4 -> sendKey("4",true)
+            R.id.button_1 -> sendKey("1",true)
+            R.id.button_2 -> sendKey("2",true)
+            R.id.button_3 -> sendKey("3",true)
+            R.id.button_4 -> sendKey("4",true)
 
-            R.id.btn_5 -> sendKey("5",true)
-            R.id.btn_6 -> sendKey("6",true)
-            R.id.btn_7 -> sendKey("7",true)
-            R.id.btn_8 -> sendKey("8",true)
+            R.id.button_5 -> sendKey("5",true)
+            R.id.button_6 -> sendKey("6",true)
+            R.id.button_7 -> sendKey("7",true)
+            R.id.button_8 -> sendKey("8",true)
 
-            R.id.btn_9 -> sendKey("9",true)
-            R.id.btn_0 -> sendKey("0",true)
-            R.id.btn_pause -> sendKey("pause",true) /* ????????????????? */
-            R.id.btn_rec -> sendKey("rec",true)
+            R.id.button_9 -> sendKey("9",true)
+            R.id.button_0 -> sendKey("0",true)
+            R.id.button_play -> sendKey("pause",true) /* ????????????????? */
+            R.id.button_rec -> sendKey("rec",true)
 
-            R.id.btn_vol_minus -> sendKey("vol_dec",true)
-            R.id.btn_up -> sendKey("up",true)
-            R.id.btn_mute -> sendKey("mute",true)
-            R.id.btn_vol_plus -> sendKey("vol_inc",true)
+            R.id.button_vol_dec -> sendKey("vol_dec",true)
+            R.id.button_up -> sendKey("up",true)
+            R.id.button_mute -> sendKey("mute",true)
+            R.id.button_vol_inc -> sendKey("vol_inc",true)
 
-            R.id.btn_left -> sendKey("left",true)
-            R.id.btn_ok -> sendKey("ok",true)
-            R.id.btn_right -> sendKey("right",true)
-            R.id.btn_pgm_plus -> sendKey("prgm_inc",true)
+            R.id.button_left -> sendKey("left",true)
+            R.id.button_ok -> sendKey("ok",true)
+            R.id.button_right -> sendKey("right",true)
+            R.id.button_prgm_inc -> sendKey("prgm_inc",true)
 
-            R.id.btn_power -> sendKey("power",true)
-            R.id.btn_down -> sendKey("down",true)
-            R.id.btn_free -> sendKey("home",true)
-            R.id.btn_pgm_minus -> sendKey("prgm_dec",true)
+            R.id.button_power -> sendKey("power",true)
+            R.id.button_down -> sendKey("down",true)
+            R.id.button_home -> sendKey("home",true)
+            R.id.button_prgm_dec -> sendKey("prgm_dec",true)
         }
         return true
     }
 
-    private fun sendKey(Key: String, longpress: Boolean) {
+    private fun sendKey(key: String, longpress: Boolean) {
         /*
         editTextRemoteCode = prefs.getString("editTextRemoteCode", "")
         if (editTextRemoteCode.contentEquals("")) {
@@ -158,7 +158,7 @@ class MainActivity : ComponentActivity() {
 
         val editTextRemoteCode = "12345"
         var serverurl =
-            "http://hd1.freebox.fr/pub/remote_control?code=$editTextRemoteCode&key=$Key"
+            "http://hd1.freebox.fr/pub/remote_control?code=$editTextRemoteCode&key=$key"
         if (longpress) serverurl = "$serverurl&long=true"
 
         Log.d("sendKey !",serverurl)
