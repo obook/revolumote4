@@ -6,3 +6,13 @@ Disponible sur le [Google Play](https://play.google.com/store/apps/details?id=co
 <img src="media/play_store_1024x500.png"  width="280">
 
 L'auteur n'est pas affilié à la société [Free](https://www.free.fr/).
+
+# Code de la télécommande
+
+Vous trouverez le code dans le menu "Réglages -> Système -> Information Freebox Player et Server" du boitier TV.
+
+<img src="media/PXL_20240902_060824262.png"  width="280">
+<img src="media/PXL_20240902_060839730.png"  width="280">
+
+Dans l'application, maintenir appuyé le bouton "OK" pour enter le code réseau de la télécommande.
+
