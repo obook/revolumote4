@@ -12,7 +12,7 @@ L'auteur n'est pas affilié à la société [Free](https://www.free.fr/).
 Vous trouverez le code dans le menu "Réglages -> Système -> Information Freebox Player et Server" du boitier TV.
 
 <img src="media/PXL_20240902_060824262.png"  width="280">
-<img src="media/PXL_20240902_060839730.png"  width="280">
+<img src="media/PXL_20240903_153706188.MP.png"  width="280">
 
 Dans l'application, maintenir appuyé le bouton "OK" pour enter le code réseau de la télécommande.
 
