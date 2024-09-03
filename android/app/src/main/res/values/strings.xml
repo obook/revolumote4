@@ -30,12 +30,12 @@
     <string name="button50">←</string>
     <string name="button51">OK</string>
     <string name="button52">→</string>
-    <string name="button53">↑\nProg</string>
+    <string name="button53">+\nProg</string>
     <!-- line 6 -->
     <string name="button60">Veille</string>
     <string name="button61">↓</string>
     <string name="button62">Free</string>
-    <string name="button63">Prog\n↓</string>
+    <string name="button63">Prog\n-</string>
     <string name="title_activity_settings">SettingsActivity</string>
     <string name="button">B1</string>
     <!-- Preference Titles -->
