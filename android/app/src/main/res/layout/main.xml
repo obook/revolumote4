@@ -164,7 +164,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/white_button"
             android:text="@string/button33"
-            android:textColor="#FF2222"
+            android:textColor="#CB1515"
             android:textStyle="bold" />
     </TableRow>
 
@@ -281,7 +281,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/white_button"
             android:text="@string/button62"
-            android:textColor="#B30000"
+            android:textColor="#CB1515"
             android:textStyle="bold|italic" />
         <!--Pgm- -->
         <Button

@@ -107,7 +107,7 @@ class MainActivity : ComponentActivity() {
 
             R.id.button_9 -> sendKey("9",false)
             R.id.button_0 -> sendKey("0",false)
-            R.id.button_play -> sendKey("pause",false) /* ????????????????? */
+            R.id.button_play -> sendKey("play",false)
             R.id.button_rec -> sendKey("rec",false)
 
             R.id.button_vol_dec -> sendKey("vol_dec",false)
@@ -146,7 +146,7 @@ class MainActivity : ComponentActivity() {
 
             R.id.button_9 -> sendKey("9",true)
             R.id.button_0 -> sendKey("0",true)
-            R.id.button_play -> sendKey("pause",true) /* ????????????????? */
+            R.id.button_play -> sendKey("play",true)
             R.id.button_rec -> sendKey("rec",true)
 
             R.id.button_vol_dec -> sendKey("vol_dec",true)

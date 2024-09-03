@@ -16,17 +16,25 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    
+
+	<style name="ButtonFontStyleVeryBig">
+		<item name="android:textSize">42sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
 	<style name="ButtonFontStyleBig">
 		<item name="android:textSize">28sp</item>
+		<item name="android:textStyle">bold</item>
 	</style>
 
 	<style name="ButtonFontStyleMedium">
 		<item name="android:textSize">18sp</item>
+		<item name="android:textStyle">bold</item>
 	</style>
 	
 	<style name="ButtonFontStyleSmall">
 		<item name="android:textSize">16sp</item>
+		<item name="android:textStyle">bold</item>
 	</style>
 	
 </resources>

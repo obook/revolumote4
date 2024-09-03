@@ -1,7 +1,8 @@
 <resources>
+    <!-- max unicode = 7.0 -->
     <string name="app_name">revolumote4</string>
     <!-- line 0 -->
-    <string name="button00">←</string>
+    <string name="button00">⤺</string>
     <string name="button01">Info</string>
     <string name="button02">Menu</string>
     <string name="button03">Rech</string>
@@ -19,22 +20,22 @@
     <string name="button30">9</string>
     <string name="button31">0</string>
     <string name="button32">Pause</string>
-    <string name="button33">Rec</string>
+    <string name="button33">Enreg</string>
     <!-- line 4 -->
-    <string name="button40">🔈</string>
+    <string name="button40">Vol -</string>
     <string name="button41">↑</string>
-    <string name="button42">MUTE</string>
-    <string name="button43">🔊</string>
+    <string name="button42">Silence</string>
+    <string name="button43">Vol +</string>
     <!-- line 5 -->
     <string name="button50">←</string>
     <string name="button51">OK</string>
     <string name="button52">→</string>
-    <string name="button53">Pgm +</string>
+    <string name="button53">↑\nProg</string>
     <!-- line 6 -->
-    <string name="button60">On\nOff</string>
+    <string name="button60">Veille</string>
     <string name="button61">↓</string>
     <string name="button62">Free</string>
-    <string name="button63">Pgm -</string>
+    <string name="button63">Prog\n↓</string>
     <string name="title_activity_settings">SettingsActivity</string>
     <string name="button">B1</string>
     <!-- Preference Titles -->

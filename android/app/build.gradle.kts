@@ -11,8 +11,8 @@ android {
         applicationId = "com.obooklage.revolumote4"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.0.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -71,7 +71,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation("com.squareup.okhttp3:okhttp:4.10.0")
-    implementation ("androidx.datastore:datastore-preferences:1.0.0")
-    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.3.1")
+    implementation(libs.okhttp)
+    implementation (libs.androidx.datastore.preferences)
+    implementation (libs.androidx.lifecycle.livedata.ktx)
 }
