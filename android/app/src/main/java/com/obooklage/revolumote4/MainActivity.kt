@@ -220,7 +220,7 @@ class MainActivity : ComponentActivity() {
             .setMessage(getString(R.string.dialog_text))
             .setView(taskEditText)
             .setPositiveButton(getString(R.string.dialog_valid)) {
-              dialog, which -> val code = taskEditText.text.toString()
+              _, which -> val code = taskEditText.text.toString() // _ = dialog
                 lifecycleScope.launch {
                     datastore.saveCodeToPreferencesStore(code,this@MainActivity)
                 }

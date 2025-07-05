@@ -4,15 +4,31 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        getByName("debug") {
+            storeFile =
+                file("/home/obooklage/obooklage@gmail.com/ownCloud.CAP/ANDROID/DEV/com.booklage.revolumote4/com.booklage.revolumote4")
+            storePassword = "83chq1dt"
+            keyAlias = "key0"
+            keyPassword = "83chq1dt"
+        }
+        create("release key") {
+            storeFile =
+                file("/home/obooklage/obooklage@gmail.com/ownCloud.CAP/ANDROID/DEV/com.booklage.revolumote4/com.booklage.revolumote4")
+            storePassword = "83chq1dt"
+            keyPassword = "83chq1dt"
+            keyAlias = "key0"
+        }
+    }
     namespace = "com.obooklage.revolumote4"
     compileSdk = 34
 
     defaultConfig {
         applicationId = "com.obooklage.revolumote4"
         minSdk = 26
-        targetSdk = 34
-        versionCode = 2
-        versionName = "1.0.2"
+        targetSdk = 35
+        versionCode = 5
+        versionName = "1.0.5"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -27,6 +43,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
