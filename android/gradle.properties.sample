@@ -23,7 +23,7 @@ kotlin.code.style=official
 android.nonTransitiveRClass=true
 
 # Pour ne pas diffuser les mots de passe sur GitHub
-# Ce fichier gradle.properties est dans .gitignore
+# Ce fichier /.gradle.properties est dans .gitignore
 STORE_PASSWORD=<password>
 KEY_PASSWORD=<password>
 STORE_FILE=<path>com.booklage.revolumote4.jks
