@@ -19,7 +19,7 @@ android {
         }
     }
     namespace = "com.obooklage.revolumote4"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.obooklage.revolumote4"
@@ -62,7 +62,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-    buildToolsVersion = "34.0.0"
+    buildToolsVersion = "35.0.0"
 }
 
 dependencies {

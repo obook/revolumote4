@@ -24,6 +24,6 @@ android.nonTransitiveRClass=true
 
 # Pour ne pas diffuser les mots de passe sur GitHub
 # Ce fichier gradle.properties est dans .gitignore
-STORE_PASSWORD=83chq1dt
-KEY_PASSWORD=83chq1dt
-STORE_FILE=/home/obooklage/obooklage@gmail.com/ownCloud.CAP/ANDROID/DEV/com.booklage.revolumote4/com.booklage.revolumote4.jks
+STORE_PASSWORD=<password>
+KEY_PASSWORD=<password>
+STORE_FILE=<path>com.booklage.revolumote4.jks
