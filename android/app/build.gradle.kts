@@ -6,18 +6,16 @@ plugins {
 android {
     signingConfigs {
         getByName("debug") {
-            storeFile =
-                file("/home/obooklage/obooklage@gmail.com/ownCloud.CAP/ANDROID/DEV/com.booklage.revolumote4/com.booklage.revolumote4")
-            storePassword = "83chq1dt"
+            storeFile = file(project.findProperty("STORE_FILE") as String)
+            storePassword = project.findProperty("STORE_PASSWORD") as String
             keyAlias = "key0"
-            keyPassword = "83chq1dt"
+            keyPassword = project.findProperty("KEY_PASSWORD") as String
         }
         create("release key") {
-            storeFile =
-                file("/home/obooklage/obooklage@gmail.com/ownCloud.CAP/ANDROID/DEV/com.booklage.revolumote4/com.booklage.revolumote4")
-            storePassword = "83chq1dt"
-            keyPassword = "83chq1dt"
+            storeFile = file(project.findProperty("STORE_FILE") as String)
+            storePassword = project.findProperty("STORE_PASSWORD") as String
             keyAlias = "key0"
+            keyPassword = project.findProperty("KEY_PASSWORD") as String
         }
     }
     namespace = "com.obooklage.revolumote4"
