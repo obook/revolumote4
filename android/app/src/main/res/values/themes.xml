@@ -1,5 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Revolumote4" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Or parent="Theme.Material3.DayNight.NoActionBar" -->
 
-    <style name="Theme.Revolumote4" parent="android:Theme.Material.Light.NoActionBar" />
+        <!-- Other items that might force fullscreen -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+    </style>
 </resources>

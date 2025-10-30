@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.ComponentActivity
+import androidx.core.view.WindowCompat
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
@@ -25,6 +26,9 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // 2. This ensures the app's content is laid out inside the system bars.
+        WindowCompat.setDecorFitsSystemWindows(window, true)
 
         // Initialising preferencesDataStore
         datastore = PrefsDataStore(this@MainActivity)
@@ -186,7 +190,7 @@ class MainActivity : ComponentActivity() {
         if (longpress) serverurl = "$serverurl&long=true"
 
         Log.d("sendKey !",serverurl)
-        asyncfetchUrl("$serverurl")
+        asyncfetchUrl(serverurl)
     }
 
     private final fun asyncfetchUrl(url: String) {
