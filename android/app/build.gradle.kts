@@ -19,14 +19,14 @@ android {
         }
     }
     namespace = "com.obooklage.revolumote4"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.obooklage.revolumote4"
         minSdk = 26
-        targetSdk = 35
-        versionCode = 6
-        versionName = "1.0.6"
+        targetSdk = 36
+        versionCode = 7
+        versionName = "1.0.7"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
